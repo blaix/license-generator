@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "license-generator"
   s.version     = License::Generator::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
+  s.authors     = ["Justin Blake"]
+  s.email       = ["justin@hentzia.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Open Source License generator}
+  s.description = %q{Generate an open source license file in your project.}
 
   s.rubyforge_project = "license-generator"
 
