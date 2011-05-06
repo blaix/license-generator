@@ -1,5 +1,3 @@
-module License
-  module Generator
-    # Your code goes here...
-  end
+module LicenseGenerator
+  autoload :App, "license-generator/app"
 end

@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 
+lib_dir = File.expand_path("../lib", File.dirname(__FILE__))
+$:.unshift lib_dir unless $:.include?(lib_dir)
+
 require "license-generator"
+LicenseGenerator::App.start
