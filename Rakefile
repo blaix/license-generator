@@ -25,3 +25,5 @@ namespace :features do
     features.cucumber_opts = "features --tags @wip --format progress"
   end
 end
+
+task :default => [:spec, :features]
