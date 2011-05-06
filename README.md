@@ -4,27 +4,29 @@ Generate an open source license for your projects.
 
 ## Usage:
 
-    lickjen [license] owner=[your name] organization=[your org or name]
+    lickjen [license] [options]
 
 I thought a phonetic spelling would be easy to remember. My apologies to
 anyone named Jennifer.
 
-## Supported license arguments:
+## Supported licenses:
 
-* bsd: [The BSD License](http://www.opensource.org/licenses/bsd-license.php)
+* [The BSD License](http://www.opensource.org/licenses/bsd-license.php)
+
+        lickjen bsd --name=[your name] --organization=[your organization]
 
 ### Please add some!
 
 There are a lot. See <http://www.opensource.org/licenses/alphabetical>.
 
 1. Fork the project
-2. Create a branch for your new license
-3. Add it. Just look at the others for examples. Don't forget the tests!
-4. Add your new license argument to the README.
-5. Leave the version number alone. I'll handle that.
-6. Push it. Send a pull request.
-7. I will pull it and add you to the credits for fame and glory.
-8. Pat yourself on the back.
+2. Create a branch for your new license.
+3. Add a cucumber feature for your license: see `features/bsd_license.feature` for an example.
+4. Add a spec for your new license task to `spec/app_spec.rb`. Use the others as reference.
+5. Add your license task to `lib/license-generator/app.rb` and license template to `templates/[license].erb`. Use the others as reference.
+6. Add your new license to this README under "Supported licenses".
+7. Push it and send a pull request.
+8. I will pull it, bump the version number, and add you to the credits for fame and glory.
 
 ## Credits
 
