@@ -5,10 +5,7 @@ describe LicenseGenerator::App do
     @app = LicenseGenerator::App.new
   end
   
-  describe '#bsd' do
-    it "creates a LICENSE file from the bsd.erb template" do
-      @app.should_receive(:template).with("bsd.erb", "LICENSE")
-      @app.bsd
-    end
+  describe 'method_missing tricks' do
+    it "should have specs"
   end
 end
