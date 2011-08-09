@@ -5,7 +5,10 @@ describe LicenseGenerator::App do
     @app = LicenseGenerator::App.new
   end
   
-  describe 'method_missing tricks' do
-    it "should have specs"
+  it "finds template dynamically" do
+    %w(bsd gpl mit).each do |license|
+      @app.should_receive(:template).with("#{license}.erb", "LICENSE")
+      @app.send(license)
+    end
   end
 end
