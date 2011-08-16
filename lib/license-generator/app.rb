@@ -9,10 +9,17 @@ module LicenseGenerator
       File.expand_path('../../templates', File.dirname(__FILE__))
     end
     
+    desc "List available license templates"
+    def list
+      Dir.foreach(self.class.source_root) do |template|
+        say template unless %w(. ..).include?(template)
+      end
+    end
+
     def method_missing(meth, *args)
       template "#{meth}.erb", "LICENSE"
     end
- 
+    
     private
     def option(name)
       @template_options ||= {}

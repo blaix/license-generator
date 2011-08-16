@@ -10,3 +10,8 @@ Feature: Generate a License
     Then a file named "LICENSE" should exist
     And the file "LICENSE" should contain a copyright notice for "Justin Blake"
     And the file "LICENSE" should contain "Neither the name of Hentzia nor the names of its"
+
+  Scenario: Run `lickjen list`
+    When I run `lickjen list`
+    Then the output should contain "bsd"
+    # TODO: add a couple more conditions when we have more templates
