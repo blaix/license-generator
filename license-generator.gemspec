@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Justin Blake"]
   s.email       = ["justin@hentzia.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/blaix/license-generator"
   s.summary     = %q{Open Source License generator}
   s.description = %q{Generate an open source license file in your project.}
   
