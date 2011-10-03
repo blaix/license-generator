@@ -4,11 +4,11 @@ Generate an open source license for your projects.
 
 ## Installation
 
-    gem install lickjen
+    gem install license-generator
 
 ## Usage:
 
-    lickjen [license] [options]
+    lickjen [license]
 
 Too see the available license templates:
 
