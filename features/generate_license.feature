@@ -1,6 +1,6 @@
 Feature: Generate a License
-  In order to release my code in some way
-  As a developer
+  In order to release my code to the public without worry
+  As an open source developer
   I want to generate a LICENSE file in my project
   
   Scenario: Run `lickjen bsd`
@@ -11,7 +11,4 @@ Feature: Generate a License
     And the file "LICENSE" should contain a copyright notice for "Justin Blake"
     And the file "LICENSE" should contain "Neither the name of Hentzia nor the names of its"
 
-  Scenario: Run `lickjen list`
-    When I run `lickjen list`
-    Then the output should contain "bsd"
-    # TODO: add a couple more conditions when we have more templates
+  # TODO: add a couple more scenarios when we have more templates
