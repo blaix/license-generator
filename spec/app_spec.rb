@@ -23,4 +23,6 @@ describe LicenseGenerator::App do
     @app.should_receive(:say).with(/gpl/).once
     @app.list
   end
+  
+  it "has proper specs for the help task"
 end

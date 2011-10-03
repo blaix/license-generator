@@ -9,7 +9,7 @@ module LicenseGenerator
       File.expand_path('../../templates', File.dirname(__FILE__))
     end
     
-    desc "list templates", "List available license templates"
+    desc "list", "List available license templates"
     def list
       Dir.foreach(self.class.source_root) do |template|
         say template unless %w(. ..).include?(template)
@@ -18,6 +18,18 @@ module LicenseGenerator
 
     def method_missing(meth, *args)
       template "#{meth}.erb", "LICENSE"
+    end
+    
+    # Override Thor#help so it can give information about any class and any method.
+    def help(task = nil)
+      super
+      say "Templates:"
+      Dir.foreach(self.class.source_root) do |template|
+        unless %w(. ..).include?(template)
+          template = template.split('.').first
+          say "  lickjen #{template}\t# Generate a #{template} template"
+        end
+      end
     end
     
     private
