@@ -12,3 +12,7 @@ Feature: Generate a License
     And the file "LICENSE" should contain "Neither the name of Hentzia nor the names of its"
 
   # TODO: add a couple more scenarios when we have more templates
+
+  Scenario: Bad template name
+    When I run `lickjen asdfaowefnasdfaoweranasdflao`
+    Then I should see a graceful failure message
