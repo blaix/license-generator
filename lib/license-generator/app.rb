@@ -23,9 +23,11 @@ module LicenseGenerator
     # Override Thor#help to include templates.
     def help(task = nil)
       super
-      say "Templates:"
-      for_each_template do |template|
-        say "  lickjen #{template}\t# Generate a #{template} template"
+      unless task
+        say "Templates:"
+        for_each_template do |template|
+          say "  lickjen #{template}\t# Generate a #{template} template"
+        end
       end
     end
     
