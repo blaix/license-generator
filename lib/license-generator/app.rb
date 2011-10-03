@@ -12,7 +12,10 @@ module LicenseGenerator
     desc "list", "List available license templates"
     def list
       Dir.foreach(self.class.source_root) do |template|
-        say template unless %w(. ..).include?(template)
+        unless %w(. ..).include?(template)
+          template = template.split('.').first
+          say template 
+        end
       end
     end
 
