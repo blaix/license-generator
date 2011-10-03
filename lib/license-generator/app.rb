@@ -20,7 +20,7 @@ module LicenseGenerator
       template "#{meth}.erb", "LICENSE"
     end
     
-    # Override Thor#help so it can give information about any class and any method.
+    # Override Thor#help to include templates.
     def help(task = nil)
       super
       say "Templates:"
