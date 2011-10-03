@@ -9,7 +9,7 @@ module LicenseGenerator
       File.expand_path('../../templates', File.dirname(__FILE__))
     end
     
-    desc "List available license templates"
+    desc "list templates", "List available license templates"
     def list
       Dir.foreach(self.class.source_root) do |template|
         say template unless %w(. ..).include?(template)
