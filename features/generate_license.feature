@@ -13,6 +13,7 @@ Feature: Generate a License
 
   # TODO: add a couple more scenarios when we have more templates
 
+  @wip
   Scenario: Bad template name
     When I run `lickjen asdfaowefnasdfaoweranasdflao`
     Then I should see a graceful failure message
