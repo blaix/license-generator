@@ -1,3 +1,7 @@
+# Version 0.2.0 (2012-03-28)
+
+Add MIT license template.
+
 # Version 0.1.1 (2011-10-03)
 
 Fix for gem loading with ruby 1.8.7
