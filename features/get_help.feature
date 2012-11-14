@@ -4,16 +4,16 @@ Feature: Get help
   I want to get help
 
   Scenario: Run licken with no args
-    When I run `lickjen`
+    When I run `licgen`
     Then I should see the generic help output
-    
+
   @wip
   Scenario: Run licken help task
-    When I run `lickjen help`
+    When I run `licgen help`
     Then I should see the generic help output
-    
+
   @wip
-  Scenario: Run lickjen help task for the list task
-  
+  Scenario: Run licgen help task for the list task
+
   @wip
-  Scenario: Run lickjen help task for the bsd template
+  Scenario: Run licgen help task for the bsd template
