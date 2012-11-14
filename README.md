@@ -8,11 +8,11 @@ Generate an open source license for your projects.
 
 ## Usage:
 
-    lickjen [license]
+    licgen [license]
 
 Too see the available license templates:
 
-    lickjen list
+    licgen list
 
 ### Please add some!
 

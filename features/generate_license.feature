@@ -2,9 +2,9 @@ Feature: Generate a License
   In order to release my code to the public without worry
   As an open source developer
   I want to generate a LICENSE file in my project
-  
-  Scenario: Run `lickjen bsd`
-    When I run `lickjen bsd` interactively
+
+  Scenario: Run `licgen bsd`
+    When I run `licgen bsd` interactively
     And I type "Justin Blake"
     And I type "Hentzia"
     Then a file named "LICENSE" should exist
@@ -15,5 +15,5 @@ Feature: Generate a License
 
   @wip
   Scenario: Bad template name
-    When I run `lickjen asdfaowefnasdfaoweranasdflao`
+    When I run `licgen asdfaowefnasdfaoweranasdflao`
     Then I should see a graceful failure message
