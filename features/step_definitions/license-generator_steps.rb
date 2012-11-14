@@ -8,8 +8,8 @@ Then /^the file "([^"]*)" should contain a copyright notice for "([^"]*)"$/ do |
 end
 
 Then /^I should see the generic help output$/ do
-  Then "the output should contain \"lickjen help [TASK]\""
-  Then "the output should contain \"lickjen list\""
-  Then "the output should contain \"lickjen bsd\""
+  Then "the output should contain \"licgen help [TASK]\""
+  Then "the output should contain \"licgen list\""
+  Then "the output should contain \"licgen bsd\""
   # TODO: add more conditions when we have more templates
 end
