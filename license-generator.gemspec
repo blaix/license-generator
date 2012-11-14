@@ -11,18 +11,18 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/blaix/license-generator"
   s.summary     = %q{Open Source License generator}
   s.description = %q{Generate an open source license file in your project.}
-  
+
   s.rubyforge_project = "license-generator"
-  
+
   s.add_dependency "thor"
-  
+
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
   s.add_development_dependency "cucumber"
   s.add_development_dependency "aruba"
 
   s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.test_files    = `git ls-files -- {spec,features}/*`.split("\n")
+  s.executables   << "licgen"
   s.require_paths = ["lib"]
 end
