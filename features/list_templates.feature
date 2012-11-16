@@ -5,4 +5,4 @@ Feature: List templates
 Scenario: Run `licgen list`
   When I run `licgen list`
   Then the output should contain "bsd"
-  # TODO: add a couple more conditions when we have more templates
+  And the output should contain "mit"
