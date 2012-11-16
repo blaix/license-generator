@@ -40,12 +40,7 @@ module LicenseGenerator
     end
 
     def for_each_template
-      Dir.foreach(self.class.source_root) do |template|
-        unless %w(. ..).include?(template)
-          template = template.split('.').first
-          yield(template)
-        end
-      end
+      Dir.glob("#{self.class.source_root}/**/*.erb").map { |t| File.basename t, '.erb' }
     end
   end
 end
