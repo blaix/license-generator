@@ -11,7 +11,7 @@ module LicenseGenerator
 
     desc "list", "List available license templates"
     def list
-      for_each_template do |template|
+      templates.each do |template|
         say template
       end
     end
@@ -25,13 +25,19 @@ module LicenseGenerator
       super
       unless task
         say "Templates:"
-        for_each_template do |template|
-          say "  licgen #{template}\t# Generate a #{template} template"
+        templates.each do |template|
+          say "  licgen #{template}\t# Generate #{template} license"
         end
       end
     end
 
-    private
+    no_tasks do
+      def templates
+        @templates ||= Dir.glob("#{LicenseGenerator::App.source_root}/**/*.erb").map { |t| File.basename(t, '.erb') }
+      end
+    end
+
+  private
 
     def option(name)
       @template_options ||= {}
@@ -39,10 +45,5 @@ module LicenseGenerator
       @template_options[name]
     end
 
-    def for_each_template
-      Dir.glob("#{self.class.source_root}/**/*.erb").each do |t|
-        yield File.basename(t, '.erb')
-      end
-    end
   end
 end
