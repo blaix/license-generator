@@ -28,6 +28,10 @@ can also prompt the user for input like this:
 
 ## Credits
 
-* Bill Evans (@thirteenpixels) for help naming the binary and pushing to make
+* Bill Evans ([@thirteenpixels][1]) for help naming the binary and pushing to make
   it not hard to add templates.
-* Dayton Nolan (@daytonn) for fixes and new templates.
+* Dayton Nolan ([@daytonn][2]) for fixes and new templates.
+
+
+[1]: https://github.com/thirteenpixels
+[2]: https://github.com/daytonn
