@@ -1,3 +1,9 @@
+# Version 0.3.1 (2013-02-12)
+
+* New licenses:
+    * AFL 3.0
+    * Mozilla 2.0
+
 # Version 0.3.0 (2012-11-19)
 
 * Binary renamed to licgen
