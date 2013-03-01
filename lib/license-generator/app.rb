@@ -3,6 +3,7 @@ require 'thor'
 module LicenseGenerator
   class App < Thor
     include Thor::Actions
+    attr_accessor :authors
 
     # Path to the templates
     def self.source_root
@@ -17,6 +18,7 @@ module LicenseGenerator
     end
 
     def method_missing(meth, *args)
+      self.authors = args.empty? ? option(:authors) : args.join(', ')
       template "#{meth}.erb", "LICENSE"
     end
 

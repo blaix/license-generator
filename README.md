@@ -8,7 +8,7 @@ Generate an open source license for your projects.
 
 ## Usage:
 
-    licgen [license]
+    licgen <license> [<author1>, [<author2> ...]]
 
 Too see the available license templates:
 
