@@ -1,3 +1,7 @@
+# Version 0.4.0 (2013-03-02)
+
+* Take authors on the command line
+
 # Version 0.3.1 (2013-02-12)
 
 * New licenses:
