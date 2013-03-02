@@ -40,7 +40,7 @@ describe LicenseGenerator::App do
 
   it "generates a template with a valid template name" do
     @app.should_receive(:template).with('mit.erb', 'LICENSE')
-    @app.mit
+    @app.mit('Justin Blake')
   end
 
 end
