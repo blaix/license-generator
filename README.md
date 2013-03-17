@@ -43,8 +43,9 @@ If authors are not specified on the command line, it will prompt the user.
   it not hard to add templates.
 * Dayton Nolan ([@daytonn][2]) for fixes and new templates.
 * Leszek Rybicki ([@leszekr][3]) for new templates.
-
+* James Pearson ([@xiongchiamiov][4]) for authors feature and new templates.
 
 [1]: https://github.com/thirteenpixels
 [2]: https://github.com/daytonn
 [3]: https://github.com/leszekr
+[4]: https://github.com/xiongchiamiov
