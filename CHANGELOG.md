@@ -1,3 +1,13 @@
+# Version 0.4.1 (2013-03-16)
+
+* New licenses:
+    * AGPL 3.0
+    * LGPL 2.1
+    * LGPL 3.0
+    * CC0 1.0
+    * WTFPL 2.0
+    * Zlib
+    
 # Version 0.4.0 (2013-03-02)
 
 * Take authors on the command line
