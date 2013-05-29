@@ -5,6 +5,8 @@ rescue LoadError
   # oh well!
 end
 
+require 'nice-sigint'
+
 module LicenseGenerator
   autoload :App, "license-generator/app"
 end

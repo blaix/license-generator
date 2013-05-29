@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "license-generator"
 
   s.add_dependency "thor"
+  s.add_dependency "nice-sigint"
 
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
