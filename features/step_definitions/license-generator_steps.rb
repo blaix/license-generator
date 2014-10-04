@@ -8,8 +8,7 @@ Then /^the file "([^"]*)" should contain a copyright notice for "([^"]*)"$/ do |
 end
 
 Then /^I should see the generic help output$/ do
+  assert_partial_output("licgen <license> [<author1>, [<author2> ...]]", all_output)
   assert_partial_output("licgen help [COMMAND]", all_output)
   assert_partial_output("licgen list", all_output)
-  assert_partial_output("licgen bsd", all_output)
-  assert_partial_output("licgen mit", all_output)
 end

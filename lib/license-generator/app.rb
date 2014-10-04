@@ -22,15 +22,17 @@ module LicenseGenerator
       template "#{meth}.erb", "LICENSE"
     end
 
-    # Override Thor#help to include templates.
     def help(task = nil)
-      super
       unless task
-        say "Templates:"
-        templates.each do |template|
-          say "  licgen #{template}\t# Generate #{template} license"
-        end
+        say "Generate an open source license for your project."
+        say ""
+        say "Usage:"
+        say "  licgen <license> [<author1>, [<author2> ...]]"
+        say ""
+
+        say "Other "
       end
+      super
     end
 
     no_tasks do
