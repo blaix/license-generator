@@ -1,0 +1,14 @@
+# Apache
+
+A permissive license that also provides an express grant of patent rights from contributors to users.
+
+|           Required           |   Permitted    |   Forbidden   |
+|------------------------------|----------------|---------------|
+| License and copyright notice | Commercial Use | Hold Liable   |
+| State Changes                | Distribution   | Use Trademark |
+|                              | Modification   |               |
+|                              | Patent Grant   |               |
+|                              | Private Use    |               |
+|                              | Sublicensing   |               |
+
+<http://choosealicense.com/licenses/apache-2.0/>

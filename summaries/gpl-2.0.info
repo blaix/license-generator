@@ -1,0 +1,13 @@
+# GPL 2
+
+GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GPL, each with different requirements.
+
+|           Required           |   Permitted    |  Forbidden   |
+|------------------------------|----------------|--------------|
+| Disclose Source              | Commercial Use | Hold Liable  |
+| License and copyright notice | Distribution   | Sublicensing |
+| State Changes                | Modification   |              |
+|                              | Patent Grant   |              |
+|                              | Private Use    |              |
+
+<http://choosealicense.com/licenses/gpl-3.0/>

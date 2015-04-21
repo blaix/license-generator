@@ -10,10 +10,38 @@ module LicenseGenerator
       File.expand_path('../../templates', File.dirname(__FILE__))
     end
 
+    def self.summary_root
+      File.expand_path('../../summaries', File.dirname(__FILE__))
+    end
+
     desc "list", "List available license templates"
     def list
       templates.each do |template|
         say template
+      end
+    end
+
+    desc "info", "Show license summary"
+    def info(license = nil)
+      summaries = {}
+      Dir.glob("#{LicenseGenerator::App.summary_root}/**/*.info") do |f|
+        summaries[File.basename(f, '.info')] = f
+      end
+
+      if license
+        if summaries.key? (license)
+          $stdout.puts IO.read(summaries[license])
+        else
+          say "No summary available for #{license}"
+        end
+      else
+        say "Available license summaries:"
+        say "----------------------------"
+        summaries.each do |title, summary|
+          say title
+        end
+        say
+        say "Usage: licgen info [license]"
       end
     end
 
@@ -48,6 +76,5 @@ module LicenseGenerator
       @template_options[name] ||= ask("#{name.capitalize}:")
       @template_options[name]
     end
-
   end
 end

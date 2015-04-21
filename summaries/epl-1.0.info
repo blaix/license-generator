@@ -1,0 +1,14 @@
+# Eclipse
+
+This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones.
+
+|           Required           |   Permitted    |  Forbidden  |
+|------------------------------|----------------|-------------|
+| Disclose Source              | Commercial Use | Hold Liable |
+| License and copyright notice | Distribution   |             |
+|                              | Modification   |             |
+|                              | Patent Grant   |             |
+|                              | Private Use    |             |
+|                              | Sublicensing   |             |
+
+<http://choosealicense.com/licenses/epl-1.0/>
