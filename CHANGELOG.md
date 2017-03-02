@@ -1,3 +1,11 @@
+# Version 1.0.0 (2017-03-02)
+
+* Improved SIGINT handling
+* Add newlines to the ends of Apache 2.0 and GPL* templates
+* Add Creative Commons Attribution 4.0 Open Source Licenses
+* Specify BSD license version number
+* Improved help output
+
 # Version 0.4.1 (2013-03-16)
 
 * New licenses:
