@@ -1,0 +1,14 @@
+# LGPL 2.1
+
+Primarily used for software libraries, LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction. There are two commonly used versions of the LGPL.
+
+|           Required           |   Permitted    |  Forbidden  |
+|------------------------------|----------------|-------------|
+| Disclose Source              | Commercial Use | Hold Liable |
+| Library usage                | Distribution   |             |
+| License and copyright notice | Modification   |             |
+|                              | Patent Grant   |             |
+|                              | Private Use    |             |
+|                              | Sublicensing   |             |
+
+<http://choosealicense.com/licenses/lgpl-2.1/>

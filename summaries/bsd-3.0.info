@@ -1,0 +1,13 @@
+# BSD ISC License
+
+A permissive license lets people do anything with your code with proper attribution and without warranty. The ISC license is functionally equivalent to the BSD 2-Clause and MIT licenses, removing some language that is no longer necessary.
+
+|           Required           |   Permitted    |  Forbidden  |
+|------------------------------|----------------|-------------|
+| License and copyright notice | Commercial Use | Hold Liable |
+|                              | Distribution   |             |
+|                              | Modification   |             |
+|                              | Private Use    |             |
+|                              | Sublicensing   |             |
+
+<http://choosealicense.com/licenses/isc/>

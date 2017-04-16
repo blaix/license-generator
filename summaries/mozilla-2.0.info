@@ -1,0 +1,14 @@
+# Mozilla
+
+The Mozilla Public License (MPL 2.0) is maintained by the Mozilla foundation. This license attempts to be a compromise between the permissive BSD license and the reciprocal GPL license.
+
+|           Required           |   Permitted    |   Forbidden   |
+|------------------------------|----------------|---------------|
+| Disclose Source              | Commercial Use | Hold Liable   |
+| License and copyright notice | Distribution   | Use Trademark |
+|                              | Modification   |               |
+|                              | Patent Grant   |               |
+|                              | Private Use    |               |
+|                              | Sublicensing   |               |
+
+<http://choosealicense.com/licenses/mpl-2.0/>

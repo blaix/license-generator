@@ -19,6 +19,10 @@ describe LicenseGenerator::App do
     LicenseGenerator::App.source_root.should == File.expand_path('../templates', File.dirname(__FILE__))
   end
 
+  it "has a class-wide summary_root" do
+    LicenseGenerator::App.summary_root.should == File.expand_path('../summaries', File.dirname(__FILE__))
+  end
+
   it "has templates" do
     @app.templates.empty?.should be false
   end
